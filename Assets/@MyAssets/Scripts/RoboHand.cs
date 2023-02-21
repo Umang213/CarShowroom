@@ -62,10 +62,10 @@ public class RoboHand : MonoBehaviour
 
     public void AddRightTyre()
     {
-        var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
+        //  var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
         var temp = isRightSide
-            ? _carBuildControler.allCars[count].rightSideWheelPoint[0]
-            : _carBuildControler.allCars[count].leftSideWheelPoint[0];
+            ? _carBuildControler.currentCar.rightSideWheelPoint[0]
+            : _carBuildControler.currentCar.leftSideWheelPoint[0];
 
         _rightPoint.wheel.transform.position = temp.position;
         _rightPoint.wheel.transform.rotation = temp.rotation;
@@ -77,10 +77,10 @@ public class RoboHand : MonoBehaviour
 
     public void AddLeftTyre()
     {
-        var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
+        //var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
         var temp = isRightSide
-            ? _carBuildControler.allCars[count].rightSideWheelPoint[1]
-            : _carBuildControler.allCars[count].leftSideWheelPoint[1];
+            ? _carBuildControler.currentCar.rightSideWheelPoint[1]
+            : _carBuildControler.currentCar.leftSideWheelPoint[1];
         _leftPoint.wheel.transform.position = temp.position;
         _leftPoint.wheel.transform.rotation = temp.rotation;
         _leftPoint.wheel.transform.SetParent(temp);
@@ -109,8 +109,8 @@ public class RoboHand : MonoBehaviour
 
     public void FitEngine()
     {
-        var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
-        var temp = _carBuildControler.allCars[count].enginePoint;
+        //var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
+        var temp = _carBuildControler.currentCar.enginePoint;
         _enginePoint.wheel.transform.position = temp.position;
         _enginePoint.wheel.transform.rotation = temp.rotation;
         _enginePoint.wheel.transform.SetParent(temp);
@@ -129,18 +129,18 @@ public class RoboHand : MonoBehaviour
 
     public void PickBody()
     {
-        var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
-        _carBuildControler.allCars[count].defaultBody.transform.position = pickPoint.position;
-        _carBuildControler.allCars[count].defaultBody.transform.SetParent(pickPoint);
+        //var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
+        _carBuildControler.currentCar.defaultBody.transform.position = pickPoint.position;
+        _carBuildControler.currentCar.defaultBody.transform.SetParent(pickPoint);
     }
 
     public void FitBody()
     {
-        var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
-        var dbody = _carBuildControler.allCars[count].defaultBody;
-        dbody.transform.position = _carBuildControler.allCars[count].dBodyPoint.position;
-        dbody.transform.rotation = _carBuildControler.allCars[count].dBodyPoint.rotation;
-        dbody.transform.SetParent(_carBuildControler.allCars[count].dBodyPoint);
+        //var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
+        var dbody = _carBuildControler.currentCar.defaultBody;
+        dbody.transform.position = _carBuildControler.currentCar.dBodyPoint.position;
+        dbody.transform.rotation = _carBuildControler.currentCar.dBodyPoint.rotation;
+        dbody.transform.SetParent(_carBuildControler.currentCar.dBodyPoint);
         _anim.SetBool("Body", false);
         _carBuildControler.AfterAddingBody();
     }

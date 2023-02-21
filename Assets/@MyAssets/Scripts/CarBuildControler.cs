@@ -8,6 +8,7 @@ using UnityEngine;
 public class CarBuildControler : MonoBehaviour
 {
     public static CarBuildControler instance;
+    public Transform carInstantiatePoint;
     public ParticleSystem smoke;
     public List<Car> allCars;
     public Transform[] processPoint;
@@ -23,7 +24,7 @@ public class CarBuildControler : MonoBehaviour
     public int fixEngineCount;
 
     [Header("AddColor")] public Animator colorRoboHand;
-    public Transform colorPoint;
+    public Transform colorSprayPoint;
 
     [Header("AddBody")] public RoboHand dBodyRoboHand;
     public Transform dBodyPoint;
@@ -38,9 +39,13 @@ public class CarBuildControler : MonoBehaviour
     public GameObject addBody;
     public GameObject addColor;
 
-    [Header("Show_Room_Point")] public CarPoint[] showroomCarPoint;
+    [Header("Show_Room_Point")] public List<CarPoint> showroomCarPoint;
+
+    public Car currentCar;
+    public CarPoint currentCarPoint;
 
     PlayerController _player;
+    CustomerManager _customerManager;
 
     private void Awake()
     {
@@ -53,29 +58,41 @@ public class CarBuildControler : MonoBehaviour
             instance = this;
         }
 
-        LoadData();
+        //LoadData();
     }
 
     private void Start()
     {
         _player = PlayerController.instance;
+        _customerManager = CustomerManager.instance;
     }
 
     [Button]
     public void BuildCar()
     {
-        var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
-        var car = allCars[count];
-        buildCar.Hide();
-        car.Show();
-        car.transform.DOScale(Vector3.one, 0.5f).From(Vector3.zero).SetEase(Ease.OutBack).OnComplete(() =>
+        var carPoint = showroomCarPoint.Find(x => x.car == null);
+        currentCarPoint = carPoint;
+        if (carPoint)
         {
-            conveyorBelt.materials[1].DOOffset(new Vector2(0, 1f), 2).SetEase(Ease.Linear).From(Vector2.zero);
-            conveyorBelt.materials[1].DOOffset(new Vector2(0, 1f), "_BumpMap", 2).SetEase(Ease.Linear)
-                .From(Vector2.zero);
-            allCars[count].transform.DOMove(processPoint[0].position, 2).SetEase(Ease.Linear)
-                .OnComplete(addWheel.Show);
-        });
+            //var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
+            currentCar = Instantiate(allCars[Helper.RandomInt(0, allCars.Count)], carInstantiatePoint.position,
+                carInstantiatePoint.rotation);
+            //carPoint.car = currentCar;
+            buildCar.Hide();
+            currentCar.Show();
+            currentCar.transform.DOScale(Vector3.one, 0.5f).From(Vector3.zero).SetEase(Ease.OutBack).OnComplete(() =>
+            {
+                conveyorBelt.materials[1].DOOffset(new Vector2(0, 1f), 2).SetEase(Ease.Linear).From(Vector2.zero);
+                conveyorBelt.materials[1].DOOffset(new Vector2(0, 1f), "_BumpMap", 2).SetEase(Ease.Linear)
+                    .From(Vector2.zero);
+                currentCar.transform.DOMove(processPoint[0].position, 2).SetEase(Ease.Linear)
+                    .OnComplete(addWheel.Show);
+            });
+        }
+        else
+        {
+            Debug.Log("No Space Available");
+        }
     }
 
     public void AddWheel()
@@ -137,8 +154,8 @@ public class CarBuildControler : MonoBehaviour
 
     public void AddBody()
     {
-        var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
-        var car = allCars[count].defaultBody;
+        //var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
+        var car = currentCar.defaultBody;
         car.transform.position = dBodyPoint.position;
         car.transform.rotation = dBodyPoint.rotation;
 
@@ -162,15 +179,21 @@ public class CarBuildControler : MonoBehaviour
     IEnumerator StartAddColor()
     {
         var player = PlayerController.instance;
-        var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
-        var body = allCars[count].body;
+        //var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
+        var body = currentCar.body;
         var temp = player.RemoveAll(color);
         if (temp.Any())
         {
             smoke.transform.position = body.transform.position.With(y: body.transform.position.y - 0.5f);
             colorRoboHand.SetBool("Color", true);
-            allCars[count].carColor.Show();
-            allCars[count].carColor.Play();
+
+            var transform1 = currentCar.carColor.transform;
+            transform1.position = colorSprayPoint.position;
+            transform1.rotation = colorSprayPoint.rotation;
+            transform1.SetParent(colorSprayPoint);
+
+            //currentCar.carColor.Show();
+            currentCar.carColor.Play();
             for (var i = 0; i < temp.Count; i++)
             {
                 var i1 = i;
@@ -185,14 +208,14 @@ public class CarBuildControler : MonoBehaviour
             }
 
             yield return new WaitForSeconds(1.5f);
-            allCars[count].defaultBody.Hide();
+            currentCar.defaultBody.Hide();
             body.Show();
             smoke.Stop();
             addColor.Hide();
             yield return new WaitForSeconds(2f);
             colorRoboHand.SetBool("Color", false);
-            allCars[count].carColor.Stop();
-            allCars[count].carColor.Hide();
+            currentCar.carColor.Stop();
+            currentCar.carColor.Hide();
             AddInShowRoom();
         }
     }
@@ -204,8 +227,7 @@ public class CarBuildControler : MonoBehaviour
             var temp = point * 1.5f;
             conveyorBelt.materials[1].DOOffset(new Vector2(0, temp), 3).SetEase(Ease.Linear);
             conveyorBelt.materials[1].DOOffset(new Vector2(0, temp), "_BumpMap", 2).SetEase(Ease.Linear);
-            allCars[PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0)].transform
-                .DOMove(processPoint[point - 1].position, 3f)
+            currentCar.transform.DOMove(processPoint[point - 1].position, 3f)
                 .SetEase(Ease.Linear).OnComplete(showGameObject.Show);
         }, 2);
     }
@@ -214,23 +236,51 @@ public class CarBuildControler : MonoBehaviour
     {
         CodeMonkey.Utils.FunctionTimer.Create(() =>
         {
-            var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
-            var car = allCars[count];
+            //var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
+            var car = currentCar;
             car.transform.DOScale(Vector3.zero, 1.8f).SetDelay(1);
             car.transform.DOMove(processPoint[4].position, 2).SetEase(Ease.Linear).OnComplete(() =>
             {
                 var transform1 = car.transform;
-                transform1.position = showroomCarPoint[count].transform.position;
-                transform1.rotation = showroomCarPoint[count].transform.rotation;
-                car.transform.SetParent(showroomCarPoint[count].transform);
+                transform1.position = currentCarPoint.transform.position;
+                transform1.rotation = currentCarPoint.transform.rotation;
+                car.transform.SetParent(currentCarPoint.transform);
                 transform1.DOScale(Vector3.one, 1).SetEase(Ease.Linear);
-                showroomCarPoint[count].transform.DORotate(new Vector3(0, 180, 0), 10, RotateMode.FastBeyond360)
+                currentCarPoint.transform.DORotate(new Vector3(0, 180, 0), 10, RotateMode.FastBeyond360)
                     .SetLoops(-1, LoopType.Incremental).SetEase(Ease.Linear);
-                CustomerManager.instance.instanceSpawing();
+                currentCarPoint.car = car;
+                _customerManager.instanceSpawing();
             });
-            PlayerPrefs.SetInt(PlayerPrefsKey.CarBuildIndex, count + 1);
+            //PlayerPrefs.SetInt(PlayerPrefsKey.CarBuildIndex, count + 1);
             buildCar.Show();
         }, 2);
+    }
+
+    public void PurchaseCar(Customer customer)
+    {
+        customer.ShowHappyEmoji();
+        _customerManager.allCustomer.Remove(customer);
+        customer.purchaseCar = customer.carPoint.car;
+        customer.carPoint.moneyStacker.GiveMoney(customer.transform, 10);
+        var carPoint = customer.carPoint;
+        var pos = carPoint.transform.position;
+        DOTween.KillAll(carPoint);
+        carPoint.car.transform.rotation = carPoint.exitPoint.rotation;
+        carPoint.transform.parent.DOMove(pos.With(y: -0.26f), 0.5f)
+            .OnComplete((() =>
+            {
+                customer.Hide();
+                carPoint.shutter.transform.DOScaleY(0, 0.5f).SetDelay(0.5f);
+                customer.purchaseCar.transform.DOMove(carPoint.exitPoint.position, 10).OnComplete((() =>
+                {
+                    Destroy(customer.purchaseCar.gameObject);
+                    Destroy(customer.gameObject);
+                }));
+                carPoint.shutter.transform.DOScaleY(1, 0.5f).SetDelay(4);
+                carPoint.transform.parent.DOMove(carPoint.realPos, 0.5f).SetDelay(2f);
+            }));
+        carPoint.car = null;
+        _customerManager.CheckForExit();
     }
 
     private void LoadData()

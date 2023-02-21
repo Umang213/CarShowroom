@@ -204,7 +204,7 @@ public class PlayerController : MonoBehaviour
 
     public Collectables RemoveFromLast(Collectables collectables, Transform stackTransform)
     {
-        var temp = allStackItems.Find(x => x.tag == collectables.tag);
+        var temp = allStackItems.FindLast(x => x.tag == collectables.tag);
         temp.transform.DOJump(stackTransform.position, 2, 1, 0.5f).OnComplete(() =>
         {
             temp.transform.SetParent(stackTransform);

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -11,7 +12,9 @@ public class Customer : MonoBehaviour
     Action _action;
     public Vector3 target;
     bool _isStop;
-
+    public CarPoint carPoint;
+    public Car purchaseCar;
+    public Transform lastPosition;
     public bool _isExit;
 
     private void Awake()
@@ -22,38 +25,23 @@ public class Customer : MonoBehaviour
     /*private void Start()
     {
         StartCoroutine(EditUpdate());
-    }*/
+    }
 
-    /*IEnumerator EditUpdate()
+    IEnumerator EditUpdate()
     {
         yield return new WaitForSeconds(1);
-        if (navMeshAgent.enabled == false && _isStop == true)
+        if (target == transform.position)
         {
-            if ((target - transform.position).magnitude > 0)
-            {
-                SetTarget(target, _action);
-            }
+            _action?.Invoke();
+            Debug.Log("A");
         }
-
-        /*if (navMeshAgent.enabled == true)
-        {
-            if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
-            {
-                if (!_isExit)
-                {
-                    //StopAgent();
-                    StopAgentForTask();
-                    _action?.Invoke();
-                    _action = null;
-                }
-            }
-        }#1#
 
         StartCoroutine(EditUpdate());
     }*/
 
     public void ExitCustomer()
     {
+        ShowSadEmoji();
         navMeshObstacle.enabled = false;
         target = CustomerManager.instance.customerInstantiatePoint.position;
         navMeshAgent.enabled = true;
@@ -100,21 +88,21 @@ public class Customer : MonoBehaviour
         anim.SetTrigger(key);
     }
 
-    /*public void ShowHappyEmoji()
+    public void ShowHappyEmoji()
     {
         var par = CustomerManager.instance.happyEmoji[Helper.RandomInt(0, CustomerManager.instance.happyEmoji.Length)];
         var pos = transform.position;
         pos.y += 3;
         var temp = Instantiate(par.gameObject, pos, Quaternion.identity, transform);
         temp.GetComponent<ParticleSystem>().Play();
-    }*/
+    }
 
-    /*public void ShowSadEmoji()
+    public void ShowSadEmoji()
     {
         var par = CustomerManager.instance.sadEmoji[Helper.RandomInt(0, CustomerManager.instance.sadEmoji.Length)];
         var pos = transform.position;
         pos.y += 3;
-        var temp = Instantiate(par.gameObject, pos, Quaternion.identity, transform);
-        temp.GetComponent<ParticleSystem>().Play();
-    }*/
+        var temp = Instantiate(par, pos, Quaternion.identity, transform);
+        temp.Play();
+    }
 }
