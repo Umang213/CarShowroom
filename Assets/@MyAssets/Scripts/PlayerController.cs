@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using DG.Tweening;
 
@@ -192,24 +191,32 @@ public class PlayerController : MonoBehaviour
         return temp;*/
     }
 
+    public Collectables FindLast(Collectables collectables)
+    {
+        return allStackItems.Find(x => x.CompareTag(collectables.tag));
+    }
+
     public void AddToStack(Collectables collectable)
     {
         collectable.transform.DOJump(stackPoint.position, 2, 1, 0.5f).OnComplete(() =>
         {
             collectable.transform.SetParent(stackPoint);
+            collectable.transform.rotation = stackPoint.rotation;
         });
         allStackItems.Add(collectable);
-        _anim.SetLayerWeight(1, 1);
+        _anim.SetLayerWeight(1, allStackItems.Count.Equals(0) ? 0 : 1);
     }
 
     public Collectables RemoveFromLast(Collectables collectables, Transform stackTransform)
     {
-        var temp = allStackItems.FindLast(x => x.tag == collectables.tag);
-        temp.transform.DOJump(stackTransform.position, 2, 1, 0.5f).OnComplete(() =>
-        {
-            temp.transform.SetParent(stackTransform);
-            temp.transform.rotation = stackTransform.rotation;
-        });
+        var temp = allStackItems.Find(x => x.CompareTag(collectables.tag));
+        temp.transform.SetParent(null);
+        temp.transform.DOJump(stackTransform.position, 2, 1, 0.5f)
+            .OnComplete(() =>
+            {
+                temp.transform.SetParent(stackTransform);
+                temp.transform.rotation = stackTransform.rotation;
+            });
         allStackItems.Remove(temp);
         if (allStackItems.Count == 0)
         {

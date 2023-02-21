@@ -99,9 +99,10 @@ public class CarBuildControler : MonoBehaviour
     {
         for (var i = 0; i < 4; i++)
         {
-            if (WheelPoints[i].wheel == null)
+            var index = i;
+            if (WheelPoints[index].wheel == null)
             {
-                var pos = WheelPoints[i].stackPoint;
+                var pos = WheelPoints[index].stackPoint;
                 var temp = _player.RemoveFromLast(wheel, pos);
                 if (temp != null)
                 {
@@ -197,6 +198,7 @@ public class CarBuildControler : MonoBehaviour
             for (var i = 0; i < temp.Count; i++)
             {
                 var i1 = i;
+                temp[i1].transform.SetParent(null);
                 temp[i1].transform.DOJump(body.transform.position, 2, 1, 0.5f)
                     .OnComplete(() =>
                     {
@@ -308,5 +310,15 @@ public class CarBuildControler : MonoBehaviour
             showroomCarPoint[i].transform.DORotate(new Vector3(0, 180, 0), 10, RotateMode.FastBeyond360)
                 .SetLoops(-1, LoopType.Incremental).SetEase(Ease.Linear);
         }
+    }
+
+    public void UnlockCar(Car car)
+    {
+        allCars.Add(car);
+    }
+
+    public void UnlockCarStand(CarPoint carPoint)
+    {
+        showroomCarPoint.Add(carPoint);
     }
 }

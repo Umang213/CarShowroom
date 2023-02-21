@@ -45,6 +45,7 @@ public class Dustbin : MonoBehaviour
                 //_player.RemoveFromLast(item, item.isDry ? dryPoint : wetPoint, true);
                 var pos = item.isDry ? dryPoint.position : wetPoint.position;
                 smoke.transform.position = pos.With(y: pos.y + 0.5f);
+                item.transform.SetParent(null);
                 item.transform.DOJump(pos, 2, 1, 0.5f).OnComplete(() =>
                 {
                     smoke.Play();
