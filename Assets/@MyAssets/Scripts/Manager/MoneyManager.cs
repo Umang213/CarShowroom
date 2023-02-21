@@ -7,7 +7,7 @@ public class MoneyManager : MonoBehaviour
 {
     public GameObject moneyPrefab;
     public GameObject moneyImage;
-    public ParticleSystem moneySpending;
+    //public ParticleSystem moneySpending;
 
     [Header("Money")] public Transform moneyIcon;
     public TextMeshProUGUI moneyScore;

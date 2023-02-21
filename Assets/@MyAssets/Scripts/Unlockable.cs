@@ -25,7 +25,7 @@ public class Unlockable : MonoBehaviour
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
-        priceText.text = price.ToString();
+        priceText.text = (price + "$").ToString();
     }
 #endif
     private void Awake()
@@ -55,7 +55,7 @@ public class Unlockable : MonoBehaviour
         {
             if (!_isPlayer) return;
             _isPlayer = false;
-            MoneyManager.instance.moneySpending.gameObject.SetActive(false);
+            //MoneyManager.instance.moneySpending.gameObject.SetActive(false);
             StopCoroutine(Unlocking());
             //DOTween.KillAll();
         }
@@ -73,8 +73,8 @@ public class Unlockable : MonoBehaviour
             var money = PlayerPrefs.GetInt(PlayerPrefsKey.Money, 0);
             if (money >= 1 && price > 0)
             {
-                MoneyManager.instance.moneySpending.transform.LookAt(transform.position);
-                MoneyManager.instance.moneySpending.gameObject.SetActive(true);
+                //MoneyManager.instance.moneySpending.transform.LookAt(transform.position);
+                //MoneyManager.instance.moneySpending.gameObject.SetActive(true);
                 if (money >= moneyCounter)
                 {
                     if (price - moneyCounter < 0)
@@ -104,14 +104,14 @@ public class Unlockable : MonoBehaviour
 
                 //price--;
                 MoneyManager.instance.moneyScore.text = PlayerPrefs.GetInt(PlayerPrefsKey.Money, 0).ToString();
-                priceText.text = price.ToString();
+                priceText.text = (price + "$").ToString();
                 PlayerPrefs.SetFloat(id, price);
                 DOTween.To(() => fillImage.fillAmount, x => fillImage.fillAmount = x, 1 - (price / fillPrice), 0.1f);
                 if (price.Equals(0))
                 {
                     PlayerPrefs.SetInt(PlayerPrefsKey.UnlockCount,
                         (PlayerPrefs.GetInt(PlayerPrefsKey.UnlockCount, 0) + 1));
-                    MoneyManager.instance.moneySpending.gameObject.SetActive(false);
+                    //MoneyManager.instance.moneySpending.gameObject.SetActive(false);
                     Unlock();
                     unlockFinishTutorial?.Invoke();
                     CustomerManager.instance.ConfettiBlast.transform.position = transform.position.With(null, 3, null);
@@ -121,7 +121,7 @@ public class Unlockable : MonoBehaviour
             }
             else
             {
-                MoneyManager.instance.moneySpending.gameObject.SetActive(false);
+                //MoneyManager.instance.moneySpending.gameObject.SetActive(false);
             }
 
             if (price % 2 == 0)
@@ -157,7 +157,7 @@ public class Unlockable : MonoBehaviour
     {
         var p = PlayerPrefs.GetFloat(id, price);
         price = p;
-        priceText.text = p.ToString();
+        priceText.text = (p + "$").ToString();
         PlayerPrefs.SetFloat(id, price);
         DOTween.To(() => fillImage.fillAmount, x => fillImage.fillAmount = x, 1 - (price / fillPrice), 0.1f);
         if (p <= 0)
