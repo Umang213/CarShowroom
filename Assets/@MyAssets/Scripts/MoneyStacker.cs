@@ -2,9 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using TMPro;
-using CodeMonkey.Utils;
-using System.Linq;
 using UnityEngine.Events;
 
 public class MoneyStacker : MonoBehaviour
@@ -54,7 +51,7 @@ public class MoneyStacker : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out PlayerController player))
+        if (other.CompareTag("Player"))
         {
             if (_isPlayer) return;
             _isPlayer = true;
@@ -64,7 +61,7 @@ public class MoneyStacker : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.TryGetComponent(out PlayerController player))
+        if (other.CompareTag("Player"))
         {
             if (!_isPlayer) return;
             _isPlayer = false;
@@ -86,9 +83,9 @@ public class MoneyStacker : MonoBehaviour
             var m = Instantiate(_moneyManager.moneyPrefab, spawnPoint.position, Quaternion.identity);
             m.transform.DOJump(stackPoint.position, 2, 1, 0.15f).OnComplete(() =>
             {
-                m.transform.rotation.SetEulerAngles(0, 0, 0);
+                //m.transform.rotation.SetEulerAngles(0, 0, 0);
                 m.transform.SetParent(stackPoint);
-                m.transform.rotation.SetEulerAngles(0, 0, 0);
+                //m.transform.rotation.SetEulerAngles(0, 0, 0);
                 //m.transform.rotation = Quaternion.Euler(0, 180, 0);
                 allMoney.Add(m.GetComponent<Money>());
             });
@@ -131,7 +128,7 @@ public class MoneyStacker : MonoBehaviour
                     mImage.SetActive(false);
                 });
             });
-            yield return new WaitForSeconds(unlockSpeed);
+            yield return new WaitForSeconds(_unlockSpeed);
 
             if (OTP && allMoney.Count.Equals(0))
             {
@@ -141,10 +138,10 @@ public class MoneyStacker : MonoBehaviour
         }
     }
 
-    float unlockSpeed = 0.2f;
+    float _unlockSpeed = 0.2f;
 
-    public void PlayDoSpeed()
+    private void PlayDoSpeed()
     {
-        DOTween.To(() => unlockSpeed, x => unlockSpeed = x, 0, 3).From(0.2f);
+        DOTween.To(() => _unlockSpeed, x => _unlockSpeed = x, 0, 3).From(0.2f);
     }
 }

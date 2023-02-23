@@ -47,6 +47,7 @@ namespace AutoLayout3D
     {
         public ConstraintType constraintType = ConstraintType.Flexible;
         public int constraintCount = 1;
+        
     }
 
     public abstract class LayoutGroup3D : LayoutElement3D

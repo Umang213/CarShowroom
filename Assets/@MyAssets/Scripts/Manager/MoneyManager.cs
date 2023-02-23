@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class MoneyManager : MonoBehaviour
 {
     public GameObject moneyPrefab;
+
     public GameObject moneyImage;
     //public ParticleSystem moneySpending;
 
@@ -28,7 +27,7 @@ public class MoneyManager : MonoBehaviour
         LoadData();
     }
 
-    public void LoadData()
+    private void LoadData()
     {
         var money = PlayerPrefs.GetInt("Money");
         moneyScore.text = (money + "$").ToString();

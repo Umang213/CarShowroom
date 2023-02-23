@@ -22,8 +22,11 @@ public class ShopStorage : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (!_isPlayer) return;
-        _isPlayer = false;
+        if (other.CompareTag("Player"))
+        {
+            if (!_isPlayer) return;
+            _isPlayer = false;
+        }
     }
 
     IEnumerator AddToPlayerStack()

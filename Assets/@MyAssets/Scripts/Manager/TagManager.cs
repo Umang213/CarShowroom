@@ -10,6 +10,7 @@ public static class AnimatorParams
 {
     internal static readonly int Move = Animator.StringToHash("Move");
     internal static readonly int Start = Animator.StringToHash("Start");
+    internal static readonly int Walk = Animator.StringToHash("Walk");
 }
 
 public static class PlayerPrefsKey

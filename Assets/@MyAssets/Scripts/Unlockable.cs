@@ -41,7 +41,7 @@ public class Unlockable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out PlayerController player))
+        if (other.CompareTag("Player"))
         {
             if (_isPlayer) return;
             _isPlayer = true;
@@ -51,7 +51,7 @@ public class Unlockable : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.TryGetComponent(out PlayerController player))
+        if (other.CompareTag("Player"))
         {
             if (!_isPlayer) return;
             _isPlayer = false;
@@ -61,13 +61,13 @@ public class Unlockable : MonoBehaviour
         }
     }
 
-    int moneyCounter = 1;
+    int _moneyCounter = 1;
 
     IEnumerator Unlocking()
     {
         yield return new WaitForSeconds(0.5f);
         PlayDoSpeed();
-        moneyCounter = 1;
+        _moneyCounter = 1;
         while (_isPlayer)
         {
             var money = PlayerPrefs.GetInt(PlayerPrefsKey.Money, 0);
@@ -75,17 +75,17 @@ public class Unlockable : MonoBehaviour
             {
                 //MoneyManager.instance.moneySpending.transform.LookAt(transform.position);
                 //MoneyManager.instance.moneySpending.gameObject.SetActive(true);
-                if (money >= moneyCounter)
+                if (money >= _moneyCounter)
                 {
-                    if (price - moneyCounter < 0)
+                    if (price - _moneyCounter < 0)
                     {
                         PlayerPrefs.SetInt(PlayerPrefsKey.Money, (money - (int)price));
                         price = 0;
                     }
                     else
                     {
-                        price -= moneyCounter;
-                        PlayerPrefs.SetInt(PlayerPrefsKey.Money, (money - moneyCounter));
+                        price -= _moneyCounter;
+                        PlayerPrefs.SetInt(PlayerPrefsKey.Money, (money - _moneyCounter));
                     }
                 }
                 else
@@ -114,7 +114,7 @@ public class Unlockable : MonoBehaviour
                     //MoneyManager.instance.moneySpending.gameObject.SetActive(false);
                     Unlock();
                     unlockFinishTutorial?.Invoke();
-                    CustomerManager.instance.ConfettiBlast.transform.position = transform.position.With(null, 3, null);
+                    CustomerManager.instance.ConfettiBlast.transform.position = transform.position.With(3);
                     CustomerManager.instance.ConfettiBlast.Play();
                     yield break;
                 }
@@ -126,19 +126,19 @@ public class Unlockable : MonoBehaviour
 
             if (price % 2 == 0)
             {
-                moneyCounter += 1;
+                _moneyCounter += 1;
             }
 
-            yield return new WaitForSeconds(unlockSpeed);
+            yield return new WaitForSeconds(_unlockSpeed);
             //yield return new WaitForSecondsRealtime(unlockSpeed);
         }
     }
 
-    float unlockSpeed = 0.2f;
+    float _unlockSpeed = 0.2f;
 
     public void PlayDoSpeed()
     {
-        DOTween.To(() => unlockSpeed, x => unlockSpeed = x, 0f, 3).From(0.2f);
+        DOTween.To(() => _unlockSpeed, x => _unlockSpeed = x, 0f, 3).From(0.2f);
     }
 
     public void Unlock()

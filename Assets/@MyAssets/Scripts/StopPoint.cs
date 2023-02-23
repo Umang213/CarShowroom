@@ -6,7 +6,7 @@ public class StopPoint : MonoBehaviour
     {
         if (other.TryGetComponent(out Customer customer))
         {
-            if (customer._isExit)
+            if (customer.isExit)
             {
                 if (customer.target != transform.position) return;
                 customer.StopAgent();

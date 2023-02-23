@@ -4,16 +4,16 @@ using System.Collections.Generic;
 using System.Linq;
 using CodeMonkey.Utils;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class CustomerManager : MonoBehaviour
 {
     public static CustomerManager instance;
-    public Customer Customer;
+    [FormerlySerializedAs("Customer")] public List<Customer> customers;
     public Transform customerInstantiatePoint;
 
     public List<Customer> allCustomer;
-    public List<MyClass> car;
 
     public ParticleSystem[] happyEmoji;
     public ParticleSystem[] sadEmoji;
@@ -61,7 +61,8 @@ public class CustomerManager : MonoBehaviour
             {
                 if (allCustomer.Count < points.Count * 2)
                 {
-                    var temp = Instantiate(Customer, customerInstantiatePoint.position, Quaternion.identity);
+                    var temp = Instantiate(customers[Helper.RandomInt(0, customers.Count)],
+                        customerInstantiatePoint.position, Quaternion.identity);
                     allCustomer.Add(temp);
                     var carPoint = points[Helper.RandomInt(0, points.Count)];
                     var pos = carPoint.point[Helper.RandomInt(0, 3)];
@@ -86,7 +87,7 @@ public class CustomerManager : MonoBehaviour
         }
     }
 
-    public void SetRandomTarget(Customer customer)
+    private void SetRandomTarget(Customer customer)
     {
         StartCoroutine(GotoNextPoint(customer));
     }
@@ -112,7 +113,6 @@ public class CustomerManager : MonoBehaviour
             {
                 pos = carPoint.point[0];
             }
-
 
             customer.carPoint = carPoint;
             customer.SetTarget(pos.position,

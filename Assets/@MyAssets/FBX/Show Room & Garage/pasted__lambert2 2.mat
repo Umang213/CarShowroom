@@ -8,11 +8,10 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pasted__lambert2 2
-  m_Shader: {fileID: 4800000, guid: ccfc7d68845db8341944b3091b59be55, type: 3}
-  m_ValidKeywords:
-  - TCP2_DISABLE_WRAPPED_LIGHT
-  - TCP2_RAMPTEXT
-  m_InvalidKeywords: []
+  m_Shader: {fileID: 4800000, guid: 24a666c4cf4f5194ba2cdff51c1dc2f0, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - OUTLINE_BLENDING
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0

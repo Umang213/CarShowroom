@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using AutoLayout3D;
 using UnityEngine;
 using DG.Tweening;
 
@@ -115,6 +116,7 @@ public class PlayerController : MonoBehaviour
         else return 0f;
     }
 
+
     Vector3 MoveForward(float factor)
     {
         Vector3 forward = transform.forward;
@@ -185,7 +187,7 @@ public class PlayerController : MonoBehaviour
 
     public Collectables LastFromStack()
     {
-        return allStackItems.Count.Equals(0) ? null : allStackItems[allStackItems.Count - 1];
+        return allStackItems.Count.Equals(0) ? null : allStackItems[^1];
 
         /*var temp = allStackItems.LastOrDefault();
         return temp;*/
@@ -200,8 +202,9 @@ public class PlayerController : MonoBehaviour
     {
         collectable.transform.DOJump(stackPoint.position, 2, 1, 0.5f).OnComplete(() =>
         {
-            collectable.transform.SetParent(stackPoint);
-            collectable.transform.rotation = stackPoint.rotation;
+            Transform transform1;
+            (transform1 = collectable.transform).SetParent(stackPoint);
+            transform1.rotation = stackPoint.rotation;
         });
         allStackItems.Add(collectable);
         _anim.SetLayerWeight(1, allStackItems.Count.Equals(0) ? 0 : 1);
@@ -214,8 +217,9 @@ public class PlayerController : MonoBehaviour
         temp.transform.DOJump(stackTransform.position, 2, 1, 0.5f)
             .OnComplete(() =>
             {
-                temp.transform.SetParent(stackTransform);
-                temp.transform.rotation = stackTransform.rotation;
+                Transform transform1;
+                (transform1 = temp.transform).SetParent(stackTransform);
+                transform1.rotation = stackTransform.rotation;
             });
         allStackItems.Remove(temp);
         if (allStackItems.Count == 0)
@@ -228,7 +232,7 @@ public class PlayerController : MonoBehaviour
 
     public List<Collectables> RemoveAll(Collectables collectables)
     {
-        var temp = allStackItems.FindAll(x => x.tag == collectables.tag);
+        var temp = allStackItems.FindAll(x => x.CompareTag(collectables.tag));
         foreach (var t in temp)
         {
             allStackItems.Remove(t);
@@ -242,7 +246,7 @@ public class PlayerController : MonoBehaviour
         return temp;
     }
 
-    public void setAnimationWeight(int id, int weight)
+    public void SetAnimationWeight(int id, int weight)
     {
         _anim.SetLayerWeight(id, weight);
     }

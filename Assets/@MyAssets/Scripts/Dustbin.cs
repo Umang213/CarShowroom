@@ -54,7 +54,7 @@ public class Dustbin : MonoBehaviour
                     Destroy(item.gameObject);
                     if (_player.allStackItems.Count == 0)
                     {
-                        _player.setAnimationWeight(1, 0);
+                        _player.SetAnimationWeight(1, 0);
                     }
                 });
             }

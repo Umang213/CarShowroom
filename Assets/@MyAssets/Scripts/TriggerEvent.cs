@@ -1,9 +1,7 @@
-using System;
 using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class TriggerEvent : MonoBehaviour
@@ -21,7 +19,7 @@ public class TriggerEvent : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out PlayerController player))
+        if (other.CompareTag("Player"))
         {
             if (_isPlayer) return;
             _isPlayer = true;
@@ -31,7 +29,7 @@ public class TriggerEvent : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.TryGetComponent(out PlayerController player))
+        if (other.CompareTag("Player"))
         {
             if (!_isPlayer) return;
             _isPlayer = false;

@@ -285,7 +285,7 @@ public class CarBuildControler : MonoBehaviour
         _customerManager.CheckForExit();
     }
 
-    private void LoadData()
+    /*private void LoadData()
     {
         var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
         for (var i = 0; i < count; i++)
@@ -310,7 +310,7 @@ public class CarBuildControler : MonoBehaviour
             showroomCarPoint[i].transform.DORotate(new Vector3(0, 180, 0), 10, RotateMode.FastBeyond360)
                 .SetLoops(-1, LoopType.Incremental).SetEase(Ease.Linear);
         }
-    }
+    }*/
 
     public void UnlockCar(Car car)
     {

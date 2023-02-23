@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -8,22 +7,17 @@ public class Customer : MonoBehaviour
     [SerializeField] NavMeshAgent navMeshAgent;
     [SerializeField] Animator anim;
     [SerializeField] NavMeshObstacle navMeshObstacle;
-    CustomerManager _customerManager;
     Action _action;
     public Vector3 target;
-    bool _isStop;
     public CarPoint carPoint;
     public Car purchaseCar;
     public Transform lastPosition;
-    public bool _isExit;
-
-    private void Awake()
-    {
-        _customerManager = CustomerManager.instance;
-    }
+    public bool isExit;
+    private static readonly int Walk = Animator.StringToHash("Walk");
 
     /*private void Start()
     {
+        noe what do we do next?
         StartCoroutine(EditUpdate());
     }
 
@@ -45,9 +39,9 @@ public class Customer : MonoBehaviour
         navMeshObstacle.enabled = false;
         target = CustomerManager.instance.customerInstantiatePoint.position;
         navMeshAgent.enabled = true;
-        navMeshAgent.SetDestination(CustomerManager.instance.customerInstantiatePoint.position);
-        anim.SetBool("Walk", true);
-        CodeMonkey.Utils.FunctionTimer.Create(() => { _isExit = true; }, 1);
+        navMeshAgent.SetDestination(target);
+        anim.SetBool(AnimatorParams.Walk, true);
+        CodeMonkey.Utils.FunctionTimer.Create(() => { isExit = true; }, 1);
     }
 
     public void SetTarget(Vector3 target, Action endTask = null)
@@ -57,23 +51,21 @@ public class Customer : MonoBehaviour
         navMeshObstacle.enabled = false;
         navMeshAgent.enabled = true;
         navMeshAgent.SetDestination(target);
-        anim.SetBool("Walk", true);
+        anim.SetBool(AnimatorParams.Walk, true);
     }
 
     public void StopAgent()
     {
-        _isStop = false;
         navMeshAgent.enabled = false;
         navMeshObstacle.enabled = true;
-        anim.SetBool("Walk", false);
+        anim.SetBool(AnimatorParams.Walk, false);
     }
 
     public void StopAgentForTask()
     {
-        _isStop = true;
         navMeshAgent.enabled = false;
         navMeshObstacle.enabled = true;
-        anim.SetBool("Walk", false);
+        anim.SetBool(Walk, false);
         _action?.Invoke();
         _action = null;
     }
@@ -91,18 +83,20 @@ public class Customer : MonoBehaviour
     public void ShowHappyEmoji()
     {
         var par = CustomerManager.instance.happyEmoji[Helper.RandomInt(0, CustomerManager.instance.happyEmoji.Length)];
-        var pos = transform.position;
+        var transform1 = transform;
+        var pos = transform1.position;
         pos.y += 3;
-        var temp = Instantiate(par.gameObject, pos, Quaternion.identity, transform);
-        temp.GetComponent<ParticleSystem>().Play();
+        var temp = Instantiate(par, pos, Quaternion.identity, transform1);
+        temp.Play();
     }
 
-    public void ShowSadEmoji()
+    private void ShowSadEmoji()
     {
         var par = CustomerManager.instance.sadEmoji[Helper.RandomInt(0, CustomerManager.instance.sadEmoji.Length)];
-        var pos = transform.position;
+        var transform1 = transform;
+        var pos = transform1.position;
         pos.y += 3;
-        var temp = Instantiate(par, pos, Quaternion.identity, transform);
+        var temp = Instantiate(par, pos, Quaternion.identity, transform1);
         temp.Play();
     }
 }
