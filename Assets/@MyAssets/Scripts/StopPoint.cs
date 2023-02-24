@@ -20,5 +20,10 @@ public class StopPoint : MonoBehaviour
                 }
             }
         }
+
+        if (other.CompareTag("Car"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }

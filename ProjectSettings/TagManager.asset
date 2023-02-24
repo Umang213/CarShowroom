@@ -8,6 +8,7 @@ TagManager:
   - Wheel
   - Engine
   - Color
+  - Car
   layers:
   - Default
   - TransparentFX

@@ -1,0 +1,1672 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <_TargetFrameworkDirectories>non_empty_path_generated_by_unity.rider.package</_TargetFrameworkDirectories>
+    <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_unity.rider.package</_FullFrameworkReferenceAssemblyPaths>
+    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{f5219479-a97d-68e2-2066-dbcb5a020926}</ProjectGuid>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\Assembly-CSharp\</OutputPath>
+    <DefineConstants>UNITY_2021_3_7;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_ANDROID;TEXTCORE_1_0_OR_NEWER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CROSS_PLATFORM_INPUT;MOBILE_INPUT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169,0649</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\ReallySimpleAudioSpawner.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\ReturnToPool.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\OnSpawnedExample.cs" />
+     <Compile Include="Assets\Toon Water Shader\Scripts\NormalsReplacementShader.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\WheelPoint.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\ShopStorage.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+     <Compile Include="Assets\BezierSolution\BezierPoint.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\StopPoint.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\RoboHand.cs" />
+     <Compile Include="Assets\AutoLayout3D\Scripts\YAxisLayoutGroup3D.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Engine\TwoFingerGesture.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Components\QuickTouch.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\CarPoint.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCButton.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingProfile.cs" />
+     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\Manager\Money.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Components\QuickTwist.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ComponentExtensions.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCDPad.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingContext.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\MoneyStacker.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\iTween.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Components\QuickLongTap.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCBase.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\BloomComponent.cs" />
+     <Compile Include="Assets\AutoLayout3D\Scripts\XAxisLayoutGroup3D.cs" />
+     <Compile Include="Assets\CodeMonkey\Utils\FunctionTimer.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\Pool.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+     <Compile Include="Assets\BezierSolution\Utilities\BezierWalkerWithTime.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Engine\BaseFinger.cs" />
+     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Engine\Finger.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\Helper.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingComponent.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Components\QuickBase.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\Unlockable.cs" />
+     <Compile Include="Assets\BezierSolution\Utilities\BezierWalkerLocomotion.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Toon Water Shader\Scripts\WaterBob.cs" />
+     <Compile Include="Assets\AutoLayout3D\Scripts\LayoutElement3D.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCArea.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\InstanceHandlerDelegateExample.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\Manager\CustomerManager.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\BloomModel.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\Manager\GameController.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\Dustbin.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+     <Compile Include="Assets\BezierSolution\Utilities\ParticlesFollowBezier.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\Floor.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCInput.cs" />
+     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Components\QuickTap.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Component\ETCSetDirectActionTransform.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\ReallySimpleParticleSpawner.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\BezierSolution\BezierSpline.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Engine\EasyTouch.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\Extentions.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCTouchPad.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Engine\EasyTouchInput.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\DeleteAndCreateInSameFrame.cs" />
+     <Compile Include="Assets\AutoLayout3D\Scripts\AutoLayout3DEditor.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Components\QuickSwipe.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Components\QuickPinch.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+     <Compile Include="Assets\BezierSolution\Utilities\BezierWalkerWithSpeed.cs" />
+     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\FogModel.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\TaaComponent.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\VignetteModel.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Components\QuickDrag.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\GrainModel.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCAxis.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\SimpleSpawner.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingModel.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\Manager\MoneyManager.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\CarBuildControler.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\Customer.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Components\QuickEnterOverExist.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\GrainComponent.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\OnCreatedDelegateExample.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\Toon Water Shader\Scripts\CameraDepthTextureMode.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\UserLutModel.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCJoystick.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+     <Compile Include="Assets\AutoLayout3D\Scripts\LayoutGroup3D.cs" />
+     <Compile Include="Assets\AutoLayout3D\Scripts\GridLayoutGroup3D.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+     <Compile Include="Assets\Samples\Easy Buttons\1.3.0\Scriptable Object Example\ScriptableObjectExample.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+     <Compile Include="Assets\Samples\Easy Buttons\1.3.0\Custom Editor Buttons Example\CustomEditorButtonsExample.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\DestroyAllChild.cs" />
+     <Compile Include="Assets\AutoLayout3D\Scripts\ZAxisLayoutGroup3D.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\ParticleWaitTest.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+     <Compile Include="Assets\Samples\Easy Buttons\1.3.0\Buttons Example\ButtonsExample.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Engine\ECamera.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Components\EasyTouchTrigger.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\Car.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+     <Compile Include="Assets\BezierSolution\Utilities\IBezierWalker.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\FogComponent.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\Collectables.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\TriggerEvent.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\CreationExample.cs" />
+     <Compile Include="Assets\@MyAssets\Scripts\Manager\TagManager.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+     <Compile Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Engine\Gesture.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\DitheringModel.cs" />
+     <Folder Include="Assets" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\workspaceserver.zh-Hans.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\cm-help.en.txt" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Environment\Confetti" />
+     <Folder Include="Assets\PoolManagerExampleFiles\Materials" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Combat\Blood\Yellow" />
+     <None Include="Library\PackageCache\com.unity.settings-manager@1.0.3\package.json" />
+     <None Include="Library\PackageCache\com.unity.modules.subsystems@1.0.0\package.json" />
+     <Folder Include="Assets\Toon City\ToonShading" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <Folder Include="Assets\@MyAssets\FBX\Money" />
+     <None Include="Library\PackageCache\com.unity.modules.jsonserialize@1.0.0\package.json" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Documentation\Documentation Data" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\SG2_Template_URP.txt" />
+     <Folder Include="Library\PackageCache\com.unity.test-framework@1.1.31" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default\Dissolve.shader" />
+     <Folder Include="Assets\@MyAssets\FBX\Charecter\carshowroom anim\Main Charecter" />
+     <Folder Include="Assets\Toon City\Models\Lettering" />
+     <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Sprites" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders PBS\TCP2_Standard PBS Outline.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Include\TCP2_Outline_Behind_SM2.shader" />
+     <None Include="Library\PackageCache\com.unity.modules.screencapture@1.0.0\package.json" />
+     <None Include="Assets\BezierSolution\README.txt" />
+     <None Include="Library\PackageCache\com.unity.modules.cloth@1.0.0\package.json" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\commontypes.es.txt" />
+     <Folder Include="Assets\Toon City\Prefabs\Industrial" />
+     <Folder Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization" />
+     <Folder Include="Assets\JMO Assets" />
+     <Folder Include="Library\PackageCache\com.unity.modules.imgui@1.0.0" />
+     <Folder Include="Assets\Toon City\Models\Update\Colliders" />
+     <Folder Include="Assets\TextMesh Pro\Sprites" />
+     <None Include="Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0\package.json" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\cm.ko.txt" />
+     <Folder Include="Assets\PostProcessing\Resources\Shaders" />
+     <None Include="Library\PackageCache\com.unity.modules.ai@1.0.0\package.json" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\xdiff.ko.txt" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Interactive\Emojis\Disgust" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
+     <Folder Include="Library\PackageCache\com.unity.modules.animation@1.0.0" />
+     <Folder Include="Assets\TextMesh Pro\Resources" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\clientcommon.zh-Hant.txt" />
+     <Folder Include="Assets\@MyAssets\FBX\Show Room" />
+     <Folder Include="Assets\Toon City\Models\Update\Materials" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\binmergetool.es.txt" />
+     <None Include="Library\PackageCache\com.unity.ugui@1.0.0\package.json" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\differences.zh-Hant.txt" />
+     <Folder Include="Library\PackageCache\com.unity.modules.xr@1.0.0" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+     <Folder Include="Assets\TextMesh Pro\Resources\Sprite Assets" />
+     <Folder Include="Assets\@MyAssets\FBX\Cars" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\configurehelper.es.txt" />
+     <Folder Include="Assets\Toon City\Prefabs Update\Buildings" />
+     <Folder Include="Assets\@MyAssets\FBX\Cars\Car_1" />
+     <Folder Include="Assets\@MyAssets\UI\Font" />
+     <Folder Include="Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Outline.txt" />
+     <None Include="Library\PackageCache\com.unity.ext.nunit@1.0.6\package.json" />
+     <Folder Include="Assets\Toon Water Shader\Scripts" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2" />
+     <Folder Include="Library\PackageCache\com.unity.ide.rider@3.0.18\Rider" />
+     <None Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+     <Folder Include="Assets\Toon City\Prefabs\Advertising" />
+     <Folder Include="Library\PackageCache\com.madsbangh.easybuttons@39da70419a" />
+     <Folder Include="Assets\Toon Water Shader\Shaders" />
+     <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+     <Folder Include="Assets\PostProcessing\Runtime\Components" />
+     <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_Matcap_Rim_Outline.shader" />
+     <Folder Include="Assets\Samples\Easy Buttons\1.3.0\Custom Editor Buttons Example" />
+     <Folder Include="Assets\@MyAssets\UI\Animation" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2\Detail Texture Simple.shader" />
+     <None Include="Library\PackageCache\com.unity.modules.assetbundle@1.0.0\package.json" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders PBS\TCP2_PBS_Main.cginc" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\binmergetool.en.txt" />
+     <Folder Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Tests" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <Folder Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Gizmos" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Textures\MatCap" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Matcap_RimOutline_OutlineBlending.shader" />
+     <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\package.json" />
+     <Folder Include="Assets\@MyAssets\Scripts\Manager" />
+     <None Include="Library\PackageCache\com.unity.modules.imgui@1.0.0\package.json" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants Base\TCP2_Mobile_Specular_OutlineBlending.shader" />
+     <Folder Include="Assets\Toon City\Terrain\Layers" />
+     <Folder Include="Assets\PostProcessing\Resources" />
+     <Folder Include="Assets\@MyAssets\FBX" />
+     <Folder Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Graphics" />
+     <Folder Include="Assets\@MyAssets\Prefabs\Collectables" />
+     <Folder Include="Assets\Toon City\Prefabs Update\Industrial" />
+     <None Include="Assets\PeterLu_HologramShader\Shader\BasicHologram.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Include" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\plastic-gui.es.txt" />
+     <None Include="Library\PackageCache\com.unity.modules.tilemap@1.0.0\package.json" />
+     <Folder Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Textures" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2\Vertex Color Albedo.shader" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Matcap.shader" />
+     <Folder Include="Library\PackageCache\com.unity.modules.assetbundle@1.0.0" />
+     <Folder Include="Assets\Toon City\Prefabs Update\Vegetation" />
+     <Folder Include="Assets\@MyAssets\FBX\Engine" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_MatCap.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+     <None Include="Assets\AutoLayout3D\readme.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+     <Folder Include="Assets\@MyAssets\UI" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\guihelp.es.txt" />
+     <Folder Include="Assets\@MyAssets\Prefabs\Customer" />
+     <Folder Include="Assets\TextMesh Pro\Resources\Fonts &amp; Materials" />
+     <None Include="Library\PackageCache\com.madsbangh.easybuttons@39da70419a\package.json" />
+     <None Include="Library\PackageCache\com.unity.timeline@1.6.4\package.json" />
+     <Folder Include="Assets\AutoLayout3D" />
+     <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom" />
+     <Folder Include="Assets\TextMesh Pro\Fonts" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Rim_Outline.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Matcap_RimOutline.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\differences.ja.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\plastic-gui.ko.txt" />
+     <Folder Include="Library\PackageCache\com.unity.recorder@3.0.3\Plugins\macOS" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Interactive\Emojis\Fear &amp; Surprise" />
+     <Folder Include="Assets\@MyAssets\FBX\Podium" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
+     <Folder Include="Assets\PostProcessing\Editor Resources" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Matcap_OutlineBlending.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default\HSV.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\cm-help.ko.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\cm.zh-Hant.txt" />
+     <Folder Include="Library\PackageCache\com.unity.visualscripting@1.7.8" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Environment\Smoke" />
+     <Folder Include="Library\PackageCache\com.autodesk.fbx@4.1.2\Tests" />
+     <Folder Include="Assets\@MyAssets" />
+     <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.16\ValidationConfig.json" />
+     <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6\net35" />
+     <Folder Include="Assets\Toon City\Profiles" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default\Old School.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Documentation\Documentation Data\Anchors" />
+     <Folder Include="Assets\@MyAssets\Texture" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Dissolve.txt" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Environment\Confetti\Blast" />
+     <None Include="Library\PackageCache\com.unity.modules.terrainphysics@1.0.0\package.json" />
+     <Folder Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Combat\Blood" />
+     <Folder Include="Library\PackageCache\com.unity.performance.profile-analyzer@1.1.1" />
+     <Folder Include="Assets\Epic Toon FX\Materials\Misc" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders PBS\TCP2_Standard PBS Outline Blended (Specular).shader" />
+     <Folder Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\AOT" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <Folder Include="Library\PackageCache\com.autodesk.fbx@4.1.2\Tests\Editor" />
+     <Folder Include="Assets\EasyTouchBundle\EasyTouch\Plugins" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants Base\TCP2_Mobile_OutlineBlending.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\binmergetool.ko.txt" />
+     <Folder Include="Assets\Toon City\Textures" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Textures\Threshold" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\commontypes.ja.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\i3.zh-Hant.txt" />
+     <Folder Include="Library\PackageCache\com.unity.modules.screencapture@1.0.0" />
+     <None Include="Library\PackageCache\com.unity.visualscripting@1.7.8\package.json" />
+     <Folder Include="Assets\@MyAssets\Scenes\SampleScene" />
+     <None Include="Library\PackageCache\com.unity.editorcoroutines@1.0.0\package.json" />
+     <None Include="Library\PackageCache\com.unity.timeline@1.6.4\ValidationExceptions.json" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders PBS\TCP2_Standard PBS Outline (Specular).shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\package.json" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules" />
+     <Folder Include="Library\PackageCache\com.unity.recorder@3.0.3" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\PBS\Sketch.shader" />
+     <None Include="Library\PackageCache\com.autodesk.fbx@4.1.2\package.json" />
+     <Folder Include="Library\PackageCache\com.unity.timeline@1.6.4" />
+     <Folder Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\images.zh-Hans.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Texture Blending.txt" />
+     <Folder Include="Assets\Toon City\Models\Update" />
+     <Folder Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Materials" />
+     <Folder Include="Library\PackageCache\com.unity.modules.cloth@1.0.0" />
+     <Folder Include="Assets\Toon City\Skyboxes" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\workspaceserver.ja.txt" />
+     <Folder Include="Assets\@MyAssets\FBX\Charecter\carshowroom anim" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_ShadowHSV.txt" />
+     <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\PackageConversionData.json" />
+     <None Include="Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0\package.json" />
+     <Folder Include="Assets\@MyAssets\FBX\Env" />
+     <None Include="Assets\Toon City\ToonShading\Shaders\ToonLitOutline.shader" />
+     <Folder Include="Library\PackageCache\com.unity.feature.development@1.0.1" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\basecommands.es.txt" />
+     <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6" />
+     <Folder Include="Assets\@MyAssets\UI\Font\Bumpo" />
+     <Folder Include="Assets\Toon City\Models\Update\Textures" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants Base\TCP2_Desktop_OutlineBlending.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates\TCP2_ShaderTemplate_Water.txt" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated" />
+     <Folder Include="Assets\@MyAssets\Prefabs\Emojis" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\SG2_Template_Default.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_Rim.shader" />
+     <Folder Include="Assets\Toon City\Models\Colliders" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\differences.zh-Hans.txt" />
+     <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.16\package.json" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default\Snow Accumulation.shader" />
+     <None Include="Library\PackageCache\com.unity.recorder@3.0.3\package.json" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <Folder Include="Library\PackageCache\com.unity.modules.imageconversion@1.0.0" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\differences.ko.txt" />
+     <Folder Include="Library\PackageCache\com.unity.modules.terrainphysics@1.0.0" />
+     <None Include="Library\PackageCache\com.unity.modules.imageconversion@1.0.0\package.json" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\commontypes.zh-Hant.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_Matcap.shader" />
+     <Folder Include="Library\PackageCache\com.unity.services.core@1.4.2\Editor" />
+     <Folder Include="Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0" />
+     <Folder Include="Assets\@MyAssets\FBX\Paint_Bucket_03" />
+     <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\ValidationExceptions.json" />
+     <Folder Include="Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TCP2_OutlineOnly Blended.shader" />
+     <None Include="Library\PackageCache\com.unity.feature.development@1.0.1\package.json" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Shaders" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\configurehelper.zh-Hant.txt" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Interactive\Emojis\Anger" />
+     <Folder Include="Library\PackageCache\com.autodesk.fbx@4.1.2" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\commontypes.en.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_NdotL Stylization.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\configurehelper.ja.txt" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Environment" />
+     <None Include="Library\PackageCache\com.unity.modules.unityanalytics@1.0.0\package.json" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+     <Folder Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Resources" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default\Comic Book.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\mergetool.zh-Hant.txt" />
+     <Folder Include="Assets\@MyAssets\FBX\Charecter\carshowroom anim\char 2 tex" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\basecommands.zh-Hans.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\plastic-gui.zh-Hant.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Rim_OutlineBlending.shader" />
+     <Folder Include="Assets\PoolManagerExampleFiles\Prefabs" />
+     <Folder Include="Library\PackageCache\com.unity.modules.subsystems@1.0.0" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_CurvedWorld.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\workspaceserver.zh-Hant.txt" />
+     <None Include="Library\PackageCache\com.unity.ide.rider@3.0.18\package.json" />
+     <Folder Include="Assets\BezierSolution\Utilities" />
+     <None Include="Library\PackageCache\com.unity.modules.video@1.0.0\package.json" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Matcap_RimOutline_Outline.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\mergetool.en.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders PBS\TCP2_PBS_Core.cginc" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\semantic.ja.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants Base\TCP2_Mobile_Specular.shader" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Interactive\Emojis\Joy" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+     <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates\TCP2_ShaderTemplate_SurfacePBS.txt" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Interactive\Emojis" />
+     <None Include="Library\PackageCache\com.unity.test-framework@1.1.31\package.json" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\!ToonyColorsPro Readme.txt" />
+     <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Resources" />
+     <Folder Include="Library\PackageCache\com.unity.modules.unityanalytics@1.0.0" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants Base\TCP2_Desktop_Specular_OutlineBlending.shader" />
+     <Folder Include="Library\PackageCache\com.unity.modules.physics@1.0.0" />
+     <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts" />
+     <Folder Include="Assets\Epic Toon FX\Materials\Misc\Unsorted" />
+     <Folder Include="Assets\@MyAssets\FBX\Shutter" />
+     <Folder Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime" />
+     <Folder Include="Assets\@MyAssets\FBX\GlobeBase" />
+     <Folder Include="Library\PackageCache\com.unity.modules.vr@1.0.0" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Matcap_Outline.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\i3.zh-Hans.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\cm.zh-Hans.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants Base\TCP2_Desktop_Outline.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TCP2_OutlineOnly SM2.shader" />
+     <Folder Include="Library\PackageCache\com.unity.testtools.codecoverage@1.0.1" />
+     <Folder Include="Library\PackageCache\com.unity.modules.physics2d@1.0.0" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_RimOutline_Outline.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Ramp Shading LWRP.txt" />
+     <Folder Include="Assets\PostProcessing\Utilities" />
+     <None Include="Library\PackageCache\com.unity.performance.profile-analyzer@1.1.1\package.json" />
+     <Folder Include="Assets\@MyAssets\FBX\Trash_Container" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Include\TCP2_Include.cginc" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TCP2_Desktop.shader" />
+     <Folder Include="Assets\@MyAssets\FBX\Floor" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2\Hologram.shader" />
+     <None Include="Library\PackageCache\com.unity.modules.particlesystem@1.0.0\package.json" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Textures\Ramps" />
+     <Folder Include="Assets\@MyAssets\FBX\Animation\Robo_01_Anime" />
+     <Folder Include="Assets\EasyTouchBundle\EasyTouch" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Smoothed Meshes" />
+     <Folder Include="Assets\Samples\Easy Buttons\1.3.0" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TCP2_OutlineOnly Blended SM2.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water\Realistic.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Include\TCP2_Outline_Include.cginc" />
+     <Folder Include="Library\PackageCache\com.unity.modules.wind@1.0.0" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants Base" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_AlbedoHSV.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Matcap_Rim_OutlineBlending.shader" />
+     <Folder Include="Assets\PostProcessing\Editor Resources\Monitors" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_Matcap_RimOutline_Outline.shader" />
+     <None Include="Library\PackageCache\com.unity.modules.physics2d@1.0.0\package.json" />
+     <None Include="Assets\PeterLu_HologramShader\Shader\DistortionRim.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <Folder Include="Assets\Samples" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\mergetool.ko.txt" />
+     <None Include="Library\PackageCache\com.unity.modules.vr@1.0.0\package.json" />
+     <Folder Include="Assets\PostProcessing\Runtime\Utils" />
+     <None Include="Library\PackageCache\com.unity.services.core@1.4.2\package.json" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\cm-help.zh-Hant.txt" />
+     <Folder Include="Assets\Samples\Easy Buttons\1.3.0\Buttons Example" />
+     <Folder Include="Library\PackageCache\com.unity.modules.uielements@1.0.0" />
+     <None Include="Library\PackageCache\com.unity.visualscripting@1.7.8\ValidationExceptions.json" />
+     <None Include="Assets\Toon Water Shader\Shaders\HiddenNormalsTexture.shader" />
+     <Folder Include="Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0" />
+     <Folder Include="Assets\TextMesh Pro\Shaders" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Documentation" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <Folder Include="Library\PackageCache\com.unity.modules.particlesystem@1.0.0" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Include\TCP2_Outline_Behind.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Normal Mapping.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\Toon City\ToonShading\Shaders\ToonLit.shader" />
+     <Folder Include="Assets\@MyAssets\FBX\Charecter" />
+     <None Include="Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
+     <Folder Include="Library\PackageCache\com.unity.settings-manager@1.0.3" />
+     <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Materials" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_RimOutline.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\plastic-gui.ja.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_Rim_Outline.shader" />
+     <Folder Include="Assets\PostProcessing\Runtime\Attributes" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_Matcap_RimOutline_OutlineBlending.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\PBS\Blended Outline.shader" />
+     <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.16\ValidationExceptions.json" />
+     <Folder Include="Assets\Epic Toon FX\Materials\Basics" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\semantic.ko.txt" />
+     <Folder Include="Assets\@MyAssets\Material" />
+     <Folder Include="Assets\NavMeshComponents\Scripts" />
+     <None Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\link.xml" />
+     <Folder Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Tests\Editor" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\commontypes.ko.txt" />
+     <None Include="Library\PackageCache\com.unity.modules.wind@1.0.0\package.json" />
+     <Folder Include="Assets\Epic Toon FX\Textures\Emojis" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+     <Folder Include="Library\PackageCache\com.unity.ugui@1.0.0\Tests" />
+     <None Include="Assets\Toon City\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Library\PackageCache\com.unity.modules.umbra@1.0.0\package.json" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\configurehelper.zh-Hans.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders PBS\TCP2_Standard PBS.shader" />
+     <None Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\package.json" />
+     <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Textures" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_VertExmotion.txt" />
+     <Folder Include="Assets\Epic Toon FX" />
+     <Folder Include="Library\PackageCache\com.unity.modules.tilemap@1.0.0" />
+     <Folder Include="Assets\PoolManagerExampleFiles\Audio" />
+     <Folder Include="Library\PackageCache\com.unity.editorcoroutines@1.0.0" />
+     <Folder Include="Assets\AutoLayout3D\Scripts" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
+     <Folder Include="Assets\Samples\Easy Buttons" />
+     <Folder Include="Assets\Toon City\ToonShading\Shaders" />
+     <Folder Include="Library\PackageCache\com.unity.modules.ui@1.0.0" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\clientcommon.en.txt" />
+     <Folder Include="Assets\BezierSolution" />
+     <Folder Include="Library\PackageCache\com.unity.services.core@1.4.2\Runtime" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\cm-help.zh-Hans.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Include\TCP2_Outline.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\clientcommon.es.txt" />
+     <Folder Include="Assets\Toon City\Models\Materials" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default\Subsurface Scattering.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\configurehelper.en.txt" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Environment\Smoke\White" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\FileSystemWatcherLicense.txt" />
+     <Folder Include="Library\PackageCache\com.unity.modules.androidjni@1.0.0" />
+     <Folder Include="Assets\@MyAssets\FBX\Tyre_Shop" />
+     <Folder Include="Assets\Toon City\Models" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Textures\Sketch" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+     <Folder Include="Assets\Toon City" />
+     <Folder Include="Assets\@MyAssets\Texture Color Palette" />
+     <Folder Include="Library\PackageCache\com.unity.performance.profile-analyzer@1.1.1\Tests" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\i3.es.txt" />
+     <Folder Include="Assets\Toon City\Prefabs\Vegetation" />
+     <Folder Include="Assets\NavMeshComponents" />
+     <Folder Include="Assets\CodeMonkey\Utils" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <Folder Include="Assets\PeterLu_HologramShader\Material" />
+     <Folder Include="Assets\Samples\Easy Buttons\1.3.0\Scriptable Object Example" />
+     <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Gizmos" />
+     <None Include="Library\PackageCache\com.unity.modules.audio@1.0.0\package.json" />
+     <Folder Include="Assets\Toon City\Prefabs Update\Props" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default" />
+     <Folder Include="Assets\@MyAssets\FBX\Show Room &amp; Garage" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Vertical Fog.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\xdiff.zh-Hans.txt" />
+     <Folder Include="Assets\PoolManagerExampleFiles" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water\Water WindWaker2.shader" />
+     <None Include="Library\PackageCache\com.unity.modules.physics@1.0.0\package.json" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_Matcap_RimOutline.shader" />
+     <Folder Include="Library\PackageCache\com.unity.collab-proxy@1.17.1" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates\TCP2_ShaderTemplate_Water_CurvedWorld.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
+     <Folder Include="Assets\Epic Toon FX\Textures" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_Rim_OutlineBlending.shader" />
+     <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Resources\Sprite Assets" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\PBS\Hand Painted.shader" />
+     <Folder Include="Assets\PoolManagerExampleFiles\Scripts" />
+     <Folder Include="Assets\TextMesh Pro\Resources\Style Sheets" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\semantic.en.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\workspaceserver.ko.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Include\TCP2_Outline_Stencil.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+     <None Include="Library\PackageCache\com.unity.modules.vehicles@1.0.0\package.json" />
+     <Folder Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Ramp Shading.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\configurehelper.ko.txt" />
+     <Folder Include="Assets\Toon City\Prefabs Update\Advertising" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Textures" />
+     <Folder Include="Assets\@MyAssets\Scripts" />
+     <None Include="Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\package.json" />
+     <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\cm.es.txt" />
+     <None Include="Library\PackageCache\com.unity.modules.uielementsnative@1.0.0\package.json" />
+     <Folder Include="Assets\Textures" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\guihelp.ja.txt" />
+     <Folder Include="Library\PackageCache\com.unity.ide.rider@3.0.18" />
+     <Folder Include="Assets\@MyAssets\FBX\Charecter\carshowroom anim\char 1 tex" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\SG2_Template_LWRP.txt" />
+     <None Include="Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0\package.json" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\mergetool.zh-Hans.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+     <Folder Include="Assets\Toon City\Models\Update\Colliders\Materials" />
+     <Folder Include="Assets\Epic Toon FX\Materials\Misc\Emojis" />
+     <Folder Include="Assets\Toon City\Prefabs Update\Cars" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders PBS\TCP2_Standard PBS Outline Blended.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\xdiff.zh-Hant.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\images.zh-Hant.txt" />
+     <Folder Include="Assets\PostProcessing\Resources\Bluenoise64" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Sketch.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\guihelp.en.txt" />
+     <None Include="Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0\package.json" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Include\TCP2_Outline_SM2.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\clientcommon.zh-Hans.txt" />
+     <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
+     <Folder Include="Assets\EasyTouchBundle\EasyTouchControls\Component" />
+     <Folder Include="Assets\PostProcessing\Runtime" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Interactive" />
+     <Folder Include="Assets\EasyTouchBundle" />
+     <Folder Include="Assets\Toon City\Prefabs\Roads" />
+     <Folder Include="Assets\PostProcessing\Utilities\CustomMotionTexture" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Shaders PBS" />
+     <Folder Include="Assets\PostProcessing" />
+     <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Prefabs" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\images.es.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Aura2.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water\Reflection.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water\Lava.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+     <Folder Include="Assets\@MyAssets\FBX\Car_Body_Service" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Screen Space UV.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_RimOutline_OutlineBlending.shader" />
+     <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Shaders\TMP_SDF_SSD.cginc" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Hash Functions.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\ValidationConfig.json" />
+     <Folder Include="Assets\Resources" />
+     <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Scenes" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Matcap_Rim.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\i3.ko.txt" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates\TCP2_ShaderTemplate_Terrain.txt" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\differences.en.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\PBS" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\basecommands.en.txt" />
+     <Folder Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Engine" />
+     <Folder Include="Assets\EasyTouchBundle\EasyTouchControls" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\binmergetool.zh-Hant.txt" />
+     <Folder Include="Assets\Toon City\Terrain" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\guihelp.zh-Hans.txt" />
+     <Folder Include="Library\PackageCache\com.unity.ide.vscode@1.2.5" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+     <Folder Include="Library\PackageCache\com.unity.modules.vehicles@1.0.0" />
+     <None Include="Library\PackageCache\com.unity.modules.xr@1.0.0\package.json" />
+     <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Tests" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\cm-help.ja.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates\TCP2_ShaderTemplate_Default_CurvedWorld.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\basecommands.ja.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\semantic.zh-Hans.txt" />
+     <Folder Include="Library\PackageCache\com.unity.services.core@1.4.2" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\xdiff.ja.txt" />
+     <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Shaders\TMP_Properties.cginc" />
+     <Folder Include="Assets\Materials" />
+     <Folder Include="Assets\@MyAssets\FBX\Flat_mat" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_RimOutline_OutlineBlending.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Triplanar.txt" />
+     <Folder Include="Assets\@MyAssets\FBX\Robo Hand" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates\TCP2_ShaderTemplate_PBS.txt" />
+     <Folder Include="Assets\PoolManagerExampleFiles\Scenes" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default\Sketch.shader" />
+     <Folder Include="Assets\@MyAssets\UI\Commons" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\basecommands.zh-Hant.txt" />
+     <Folder Include="Assets\Toon Water Shader" />
+     <None Include="Assets\Toon City\ToonShading\Shaders\ToonBasicOutline.shader" />
+     <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Shaders\TMP_SDF Internal Editor.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders PBS\TCP2_PBS_ShadowMeta.shader" />
+     <Folder Include="Library\PackageCache\com.unity.modules.umbra@1.0.0" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+     <Folder Include="Assets\@MyAssets\FBX\Color Can" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Combat" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TCP2_Mobile.shader" />
+     <None Include="Library\PackageCache\com.unity.formats.fbx@4.1.3\package.json" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water\Lava Cartoon.shader" />
+     <Folder Include="Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0" />
+     <Folder Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib" />
+     <None Include="Library\PackageCache\com.unity.modules.director@1.0.0\package.json" />
+     <Folder Include="Assets\@MyAssets\FBX\Cars\Car_3" />
+     <Folder Include="Assets\CodeMonkey" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\binmergetool.ja.txt" />
+     <Folder Include="Assets\@MyAssets\Prefabs" />
+     <None Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\ValidationExceptions.json" />
+     <Folder Include="Library\PackageCache\com.unity.modules.jsonserialize@1.0.0" />
+     <None Include="Library\PackageCache\com.unity.visualscripting@1.7.8\ValidationConfig.json" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\PBS\Outline Behind.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\differences.es.txt" />
+     <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Shaders" />
+     <Folder Include="Library\PackageCache\com.unity.modules.director@1.0.0" />
+     <Folder Include="Assets\@MyAssets\FBX\Engine_Service" />
+     <Folder Include="Library\PackageCache\com.unity.modules.audio@1.0.0" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_Matcap_Rim.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_HSV.txt" />
+     <Folder Include="Library\PackageCache\com.unity.settings-manager@1.0.3\Content" />
+     <Folder Include="Assets\Toon City\Prefabs\Pavement" />
+     <Folder Include="Library\PackageCache\com.unity.recorder@3.0.3\Plugins" />
+     <None Include="Assets\PeterLu_HologramShader\Documentation.txt" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water" />
+     <Folder Include="Assets\Toon City\Prefabs\Props" />
+     <None Include="Library\PackageCache\com.unity.modules.terrain@1.0.0\package.json" />
+     <Folder Include="Assets\@MyAssets\FBX\Cars\Car_2" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders PBS\TCP2_Standard PBS (Specular).shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\xdiff.en.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\plastic-gui.zh-Hans.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
+     <Folder Include="Assets\PostProcessing\Runtime\Models" />
+     <Folder Include="Assets\TextMesh Pro" />
+     <Folder Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.16" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\xdiff.es.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Matcap_Rim_Outline.shader" />
+     <None Include="Library\PackageCache\com.unity.modules.androidjni@1.0.0\package.json" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants Base\TCP2_Mobile_Outline.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <Folder Include="Library\PackageCache\com.unity.formats.fbx@4.1.3" />
+     <Folder Include="Library\PackageCache\com.unity.modules.video@1.0.0" />
+     <Folder Include="Assets\Toon City\Prefabs Update" />
+     <Folder Include="Assets\Toon City\Profiles\LUT" />
+     <Folder Include="Library\PackageCache\com.unity.modules.ai@1.0.0" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_Matcap_Rim_OutlineBlending.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants Base\TCP2_Desktop_Specular_Outline.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\i3.en.txt" />
+     <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\PackageConversionData_Assets.json" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\cm.ja.txt" />
+     <Folder Include="Assets\@MyAssets\Prefabs\AllCars" />
+     <Folder Include="Assets\PeterLu_HologramShader\Shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Rim Lighting.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\clientcommon.ko.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants Base\TCP2_Mobile_Specular_Outline.shader" />
+     <Folder Include="Assets\Toon City\Prefabs" />
+     <Folder Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Editor" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\cm-help.es.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\basecommands.ko.txt" />
+     <None Include="Library\PackageCache\com.autodesk.fbx@4.1.2\ValidationExceptions.json" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Subsurface Scattering.txt" />
+     <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Package Resources" />
+     <Folder Include="Assets\Epic Toon FX\Materials" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\mergetool.ja.txt" />
+     <Folder Include="Assets\@MyAssets\Scenes" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <Folder Include="Library\PackageCache\com.unity.modules.terrain@1.0.0" />
+     <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Textures" />
+     <None Include="Library\PackageCache\com.unity.modules.animation@1.0.0\package.json" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_NoTile Sampling.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders PBS\TCP2_PBS_BRDF.cginc" />
+     <Folder Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\workspaceserver.es.txt" />
+     <Folder Include="Library\PackageCache\com.autodesk.fbx@4.1.2\Tests\Runtime" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_Matcap_OutlineBlending.shader" />
+     <Folder Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders" />
+     <Folder Include="Assets\TextMesh Pro\Documentation" />
+     <Folder Include="Library\PackageCache\com.unity.modules.uielementsnative@1.0.0" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\images.en.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants Base\TCP2_Desktop_Specular.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\workspaceserver.en.txt" />
+     <Folder Include="Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Rim.shader" />
+     <Folder Include="Assets\@MyAssets\FBX\Door_With_Poster" />
+     <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\mergetool.es.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TCP2_OutlineOnly.shader" />
+     <Folder Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\guihelp.ko.txt" />
+     <None Include="Assets\PeterLu_HologramShader\Shader\BaiscRim.shader" />
+     <Folder Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\semantic.zh-Hant.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\guihelp.zh-Hant.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water\Water WindWaker.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_CustomAmbient.txt" />
+     <Folder Include="Assets\EasyTouchBundle\EasyTouch\Plugins\Components" />
+     <None Include="Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0\package.json" />
+     <Folder Include="Assets\PeterLu_HologramShader\Scenes" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_RimOutline_Outline.shader" />
+     <Folder Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_Specular_Matcap_Outline.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates\TCP2_ShaderTemplate_Default.txt" />
+     <Folder Include="Assets\Toon City\Models\Colliders\Materials" />
+     <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Resources\Fonts &amp; Materials" />
+     <None Include="Library\PackageCache\com.unity.modules.uielements@1.0.0\package.json" />
+     <Folder Include="Assets\PeterLu_HologramShader" />
+     <Folder Include="Assets\Toon City\Prefabs Update\Roads" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water\Poison.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\plastic-gui.en.txt" />
+     <Folder Include="Assets\@MyAssets\FBX\Animation" />
+     <Folder Include="Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\i3.ja.txt" />
+     <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Resources\Color Gradient Presets" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\Variants\TCP2_Mobile_RimOutline.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
+     <Folder Include="Library\PackageCache\com.unity.ugui@1.0.0" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\binmergetool.zh-Hans.txt" />
+     <Folder Include="Library\PackageCache\com.unity.settings-manager@1.0.3\Tests" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\commontypes.zh-Hans.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Specular.txt" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\images.ko.txt" />
+     <Folder Include="Assets\Epic Toon FX\Materials\Misc\Stars" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\images.ja.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2\Detail Texture.shader" />
+     <None Include="Library\PackageCache\com.unity.modules.ui@1.0.0\package.json" />
+     <Folder Include="Assets\Epic Toon FX\Prefabs\Interactive\Emojis\Sadness" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\cm.en.txt" />
+     <Folder Include="Library\PackageCache\com.unity.recorder@3.0.3\Plugins\x64" />
+     <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\localization\clientcommon.ja.txt" />
+     <Folder Include="Assets\PostProcessing\Editor Resources\UI" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Reflection.txt" />
+     <Folder Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Models" />
+     <Folder Include="Assets\Toon City\Prefabs Update\Pavement" />
+     <None Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\package.json" />
+     <Reference Include="UnityEngine">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.AIModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.ARModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.AccessibilityModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.AndroidJNIModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.AnimationModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.AssetBundleModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.AudioModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.ClothModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.CoreModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.CrashReportingModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.DSPGraphModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.DirectorModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.GIModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.GameCenterModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.GridModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.HotReloadModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.IMGUIModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.ImageConversionModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.InputModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.InputLegacyModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.JSONSerializeModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.LocalizationModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.ParticleSystemModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.PerformanceReportingModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.PhysicsModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.Physics2DModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.ProfilerModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.ScreenCaptureModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.SharedInternalsModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.SpriteMaskModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.SpriteShapeModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.StreamingModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.SubstanceModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.SubsystemsModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.TLSModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.TerrainModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.TerrainPhysicsModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.TextCoreFontEngineModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.TextCoreTextEngineModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.TextRenderingModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.TilemapModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UIModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UIElementsModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UIElementsNativeModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UNETModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UmbraModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UnityAnalyticsModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UnityConnectModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UnityCurlModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UnityTestProtocolModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UnityWebRequestModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.VFXModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.VRModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.VehiclesModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.VideoModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.WindModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.XRModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.CoreModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.DeviceSimulatorModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.DeviceSimulatorModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.DiagnosticsModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.DiagnosticsModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.GraphViewModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.PackageManagerUIModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.QuickSearchModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.QuickSearchModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.SceneTemplateModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.TextCoreFontEngineModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreFontEngineModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.TextCoreTextEngineModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreTextEngineModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.UIBuilderModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIBuilderModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.UIElementsModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.UIElementsSamplesModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.UIServiceModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.UnityConnectModule">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+     </Reference>
+     <Reference Include="DemiLib">
+     <HintPath>E:\Unity Projects\Umang\CarShowroom\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTween">
+     <HintPath>E:\Unity Projects\Umang\CarShowroom\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+     <HintPath>E:\Unity Projects\Umang\CarShowroom\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="ReportGeneratorMerged">
+     <HintPath>E:\Unity Projects\Umang\CarShowroom\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     </Reference>
+     <Reference Include="Newtonsoft.Json">
+     <HintPath>E:\Unity Projects\Umang\CarShowroom\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTweenPro">
+     <HintPath>E:\Unity Projects\Umang\CarShowroom\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Android.Types">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Android.Gradle">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
+     </Reference>
+     <Reference Include="netstandard">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
+     </Reference>
+     <Reference Include="Microsoft.Win32.Primitives">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.AppContext">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.AppContext.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Buffers">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Buffers.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Collections.Concurrent">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Collections">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Collections.NonGeneric">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Collections.Specialized">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ComponentModel">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ComponentModel.EventBasedAsync">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ComponentModel.Primitives">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ComponentModel.TypeConverter">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Console">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Console.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Data.Common">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Data.Common.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.Contracts">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.Debug">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.FileVersionInfo">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.Process">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.StackTrace">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.TextWriterTraceListener">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.Tools">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.TraceSource">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.Tracing">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Drawing.Primitives">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Dynamic.Runtime">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Globalization.Calendars">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Globalization">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Globalization.Extensions">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.Compression">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.Compression.ZipFile">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.FileSystem">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.FileSystem.DriveInfo">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.FileSystem.Primitives">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.FileSystem.Watcher">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.IsolatedStorage">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.MemoryMappedFiles">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.Pipes">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.UnmanagedMemoryStream">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Linq">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Linq.Expressions">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Linq.Parallel">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Linq.Queryable">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Memory">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Memory.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.Http">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Http.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.NameResolution">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.NetworkInformation">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.Ping">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Ping.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.Primitives">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.Requests">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Requests.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.Security">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Security.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.Sockets">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.WebHeaderCollection">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.WebSockets.Client">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.WebSockets">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Numerics.Vectors">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Numerics.Vectors.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ObjectModel">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ObjectModel.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Reflection.DispatchProxy">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.DispatchProxy.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Reflection">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Reflection.Emit">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Reflection.Emit.ILGeneration">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.ILGeneration.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Reflection.Emit.Lightweight">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.Lightweight.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Reflection.Extensions">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Reflection.Primitives">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Resources.Reader">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Resources.ResourceManager">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Resources.Writer">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.CompilerServices.VisualC">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Extensions">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Handles">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.InteropServices">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Numerics">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Serialization.Formatters">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Serialization.Json">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Serialization.Primitives">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Serialization.Xml">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.Claims">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Claims.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.Cryptography.Algorithms">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.Cryptography.Csp">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.Cryptography.Encoding">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.Cryptography.Primitives">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.Cryptography.X509Certificates">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.Principal">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Principal.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.SecureString">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Text.Encoding">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Text.Encoding.Extensions">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Text.RegularExpressions">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading.Overlapped">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading.Tasks">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading.Tasks.Extensions">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Extensions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading.Tasks.Parallel">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading.Thread">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading.ThreadPool">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading.Timer">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ValueTuple">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ValueTuple.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.ReaderWriter">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.XDocument">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.XmlDocument">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.XmlSerializer">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.XPath">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.XPath.XDocument">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+     </Reference>
+     <Reference Include="mscorlib">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\mscorlib.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ComponentModel.Composition">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Core">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Core.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Data">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Data.dll</HintPath>
+     </Reference>
+     <Reference Include="System">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Drawing">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Drawing.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.Compression.FileSystem">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Net.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Numerics">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Numerics.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Serialization">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ServiceModel.Web">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Transactions">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Transactions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Web">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Web.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Windows">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Windows.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.Linq">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.Serialization">
+     <HintPath>C:\Unity\Editors\2021.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
+     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{f4883b2c-335f-b947-cfc6-6c1ad4c15290}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="EasyButtons.Editor.csproj">
+      <Project>{cf8e1399-cf0f-3c74-128e-e49041aa947e}</Project>
+      <Name>EasyButtons.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
+      <Project>{6dff2d35-a4f1-67a0-6762-6322915e251b}</Project>
+      <Name>Unity.VisualScripting.Flow.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.Editor.csproj">
+      <Project>{4898985d-aa34-ac64-854f-5d7aa3f382fd}</Project>
+      <Name>Unity.Recorder.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro2.Demo.csproj">
+      <Project>{b5b50004-6479-698b-7555-eb797eda8165}</Project>
+      <Name>ToonyColorsPro2.Demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VSCode.Editor.csproj">
+      <Project>{069e7ef0-d079-a228-12e7-78e067bfc251}</Project>
+      <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.Base.csproj">
+      <Project>{a94c8760-62b3-e3bd-5422-8e45afd75d95}</Project>
+      <Name>Unity.Recorder.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="EasyButtons.csproj">
+      <Project>{9d891cd8-254f-deeb-9fe6-89c51e00ee44}</Project>
+      <Name>EasyButtons</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{a63c6c65-b962-7853-3243-ff55c6b17042}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Performance.Profile-Analyzer.Editor.csproj">
+      <Project>{4b34e9ae-7567-fd39-42fa-768c86c85481}</Project>
+      <Name>Unity.Performance.Profile-Analyzer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj">
+      <Project>{4907f16b-e6bf-1a0e-4534-cb9dc601a02b}</Project>
+      <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
+      <Project>{c342f862-64ea-70a0-f1b6-64fd87001bf0}</Project>
+      <Name>Unity.VisualStudio.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Formats.Fbx.Editor.csproj">
+      <Project>{7c784e17-cc2d-16ef-918c-585983605ea6}</Project>
+      <Name>Unity.Formats.Fbx.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.csproj">
+      <Project>{c122fe8f-6daa-752c-7264-481c7ac8c333}</Project>
+      <Name>Unity.Timeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
+      <Project>{bb9a40ca-c542-98dd-6396-02ac11803b1a}</Project>
+      <Name>Unity.VisualScripting.Core.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{d83ea55f-d698-5776-4eef-56c8fce5dec1}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
+      <Project>{570ef525-79ae-1b19-dd04-e6f0f62826f7}</Project>
+      <Name>Unity.VisualScripting.State.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AdjustPivot.Editor.csproj">
+      <Project>{6d96e60f-8988-6ba3-a3a3-8c26664344c2}</Project>
+      <Name>AdjustPivot.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
+      <Project>{1450bcf7-8581-78d3-d9f3-8da8343227ce}</Project>
+      <Name>Unity.VisualScripting.SettingsProvider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Autodesk.Fbx.Editor.csproj">
+      <Project>{a4251957-b666-60b3-253c-dc2a4410e434}</Project>
+      <Name>Autodesk.Fbx.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj">
+      <Project>{76cbb263-42b1-c31a-cf9e-c77fbaa7ef35}</Project>
+      <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
+      <Project>{386c384f-d492-e58c-959b-7db4231d8b10}</Project>
+      <Name>Unity.VisualScripting.Flow</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{73ba8296-23de-f5ec-1d04-d22bbf5913d9}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
+      <Project>{f96bf452-a9ab-e922-5fb6-20d714418ab2}</Project>
+      <Name>Unity.PlasticSCM.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{14f7e284-797c-f638-7661-480f0e8cf196}</Project>
+      <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Autodesk.Fbx.csproj">
+      <Project>{08789279-d662-e428-baa2-67d310cf3ad6}</Project>
+      <Name>Autodesk.Fbx</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{6fd4fd17-80f9-0799-6963-709ef5c5767b}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.csproj">
+      <Project>{ad699c06-b585-105f-9541-5e3abfbb2d21}</Project>
+      <Name>Unity.Services.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Core.csproj">
+      <Project>{cf0f5ab0-7aa1-9a41-2d1f-311beeeeb43e}</Project>
+      <Name>Unity.VisualScripting.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
+      <Project>{7a576ccc-a18f-80af-b3e1-5a5d9a28a234}</Project>
+      <Name>Unity.EditorCoroutines.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Analytics.csproj">
+      <Project>{dd6bd031-8cd0-0e8c-998a-6e0793ceb62d}</Project>
+      <Name>Unity.Services.Core.Analytics</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
+      <Project>{128fb379-d285-14c2-994e-b496cbee1ffb}</Project>
+      <Name>Unity.VisualScripting.Shared.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro.Runtime.csproj">
+      <Project>{0cc37574-58c4-a8c3-403e-846f49533397}</Project>
+      <Name>ToonyColorsPro.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Environments.csproj">
+      <Project>{df9f3643-c696-3621-2d1d-56d73037ba87}</Project>
+      <Name>Unity.Services.Core.Environments</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Formats.Fbx.Runtime.csproj">
+      <Project>{bd303b43-bfb4-a424-05ee-f5a91c0f450c}</Project>
+      <Name>Unity.Formats.Fbx.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{cf7ce455-277a-100c-1e50-da13c5f6c293}</Project>
+      <Name>Unity.Timeline.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj">
+      <Project>{de3ef633-0729-75e3-1813-b7098d1df999}</Project>
+      <Name>Unity.TestTools.CodeCoverage.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro.Editor.csproj">
+      <Project>{00699f6f-1e90-5374-0b11-e2ae47d34591}</Project>
+      <Name>ToonyColorsPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.State.csproj">
+      <Project>{cebb54e5-e056-cca6-abd2-143985891325}</Project>
+      <Name>Unity.VisualScripting.State</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.csproj">
+      <Project>{4fca6d80-a840-57e9-ac79-c2071984f8c8}</Project>
+      <Name>Unity.Recorder</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

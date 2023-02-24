@@ -74,6 +74,7 @@ public class CarBuildControler : MonoBehaviour
         currentCarPoint = carPoint;
         if (carPoint)
         {
+            buildCar.Hide();
             //var count = PlayerPrefs.GetInt(PlayerPrefsKey.CarBuildIndex, 0);
             currentCar = Instantiate(allCars[Helper.RandomInt(0, allCars.Count)], carInstantiatePoint.position,
                 carInstantiatePoint.rotation);
@@ -273,12 +274,16 @@ public class CarBuildControler : MonoBehaviour
             {
                 customer.Hide();
                 carPoint.shutter.transform.DOScaleY(0, 0.5f).SetDelay(0.5f);
-                customer.purchaseCar.transform.DOMove(carPoint.exitPoint.position, 10).OnComplete((() =>
+                customer.purchaseCar.transform.DOMove(carPoint.exitPoint.position, 5).OnComplete((() =>
                 {
-                    Destroy(customer.purchaseCar.gameObject);
+                    customer.purchaseCar.transform.rotation = carPoint.path.transform.rotation;
+                    customer.purchaseCar.navMeshAgent.enabled = true;
+                    customer.purchaseCar.navMeshAgent.SetDestination(carPoint.pathEndPoint.position);
                     Destroy(customer.gameObject);
+                    //carPoint.path.gameObject.Show();
+                    //customer.purchaseCar.transform.SetParent(carPoint.path.transform);
                 }));
-                carPoint.shutter.transform.DOScaleY(1, 0.5f).SetDelay(4);
+                carPoint.shutter.transform.DOScaleY(1, 0.5f).SetDelay(6);
                 carPoint.transform.parent.DOMove(carPoint.realPos, 0.5f).SetDelay(2f);
             }));
         carPoint.car = null;

@@ -1,5 +1,6 @@
-using System;
 using System.Collections.Generic;
+using DG.Tweening;
+using EasyButtons;
 using UnityEngine;
 
 public class CarPoint : MonoBehaviour
@@ -10,6 +11,8 @@ public class CarPoint : MonoBehaviour
     public Transform exitPoint;
     public Transform shutter;
     public Vector3 realPos;
+    public DOTweenPath path;
+    public Transform pathEndPoint;
 
     private void Start()
     {

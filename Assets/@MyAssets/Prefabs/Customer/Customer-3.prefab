@@ -856,7 +856,7 @@ MonoBehaviour:
   carPoint: {fileID: 0}
   purchaseCar: {fileID: 0}
   lastPosition: {fileID: 0}
-  _isExit: 0
+  isExit: 0
 --- !u!195 &-2567299002996462676
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -903,7 +903,7 @@ NavMeshObstacle:
   m_Enabled: 0
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_Extents: {x: 0.25, y: 0.25, z: 0.25}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1

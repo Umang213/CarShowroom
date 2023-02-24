@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Car : MonoBehaviour
 {
@@ -11,4 +12,5 @@ public class Car : MonoBehaviour
     public Transform enginePoint;
     public Transform dBodyPoint;
     public ParticleSystem carColor;
+    public NavMeshAgent navMeshAgent;
 }
